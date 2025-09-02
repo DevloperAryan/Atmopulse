@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>&#x1f324;&#xfe0f; AtmoPulse | Your Smart Weather Companion&ast;</title>
+  <style>
+    /* From extension vscode.github */
+    /*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+    .vscode-dark img[src$=\#gh-light-mode-only],
+    .vscode-light img[src$=\#gh-dark-mode-only],
+    .vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+    .vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+      display: none;
+    }
+  </style>
+
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  </style>
+  <style>
+    .task-list-item {
+      list-style-type: none;
+    }
+
+    .task-list-item-checkbox {
+      margin-left: -20px;
+      vertical-align: middle;
+      pointer-events: none;
+    }
+  </style>
+  <style>
+    :root {
+      --color-note: #0969da;
+      --color-tip: #1a7f37;
+      --color-warning: #9a6700;
+      --color-severe: #bc4c00;
+      --color-caution: #d1242f;
+      --color-important: #8250df;
+    }
+  </style>
+  <style>
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-note: #2f81f7;
+        --color-tip: #3fb950;
+        --color-warning: #d29922;
+        --color-severe: #db6d28;
+        --color-caution: #f85149;
+        --color-important: #a371f7;
+      }
+    }
+  </style>
+  <style>
+    .markdown-alert {
+      padding: 0.5rem 1rem;
+      margin-bottom: 16px;
+      color: inherit;
+      border-left: .25em solid #888;
+    }
+
+    .markdown-alert>:first-child {
+      margin-top: 0
+    }
+
+    .markdown-alert>:last-child {
+      margin-bottom: 0
+    }
+
+    .markdown-alert .markdown-alert-title {
+      display: flex;
+      font-weight: 500;
+      align-items: center;
+      line-height: 1
+    }
+
+    .markdown-alert .markdown-alert-title .octicon {
+      margin-right: 0.5rem;
+      display: inline-block;
+      overflow: visible !important;
+      vertical-align: text-bottom;
+      fill: currentColor;
+    }
+
+    .markdown-alert.markdown-alert-note {
+      border-left-color: var(--color-note);
+    }
+
+    .markdown-alert.markdown-alert-note .markdown-alert-title {
+      color: var(--color-note);
+    }
+
+    .markdown-alert.markdown-alert-important {
+      border-left-color: var(--color-important);
+    }
+
+    .markdown-alert.markdown-alert-important .markdown-alert-title {
+      color: var(--color-important);
+    }
+
+    .markdown-alert.markdown-alert-warning {
+      border-left-color: var(--color-warning);
+    }
+
+    .markdown-alert.markdown-alert-warning .markdown-alert-title {
+      color: var(--color-warning);
+    }
+
+    .markdown-alert.markdown-alert-tip {
+      border-left-color: var(--color-tip);
+    }
+
+    .markdown-alert.markdown-alert-tip .markdown-alert-title {
+      color: var(--color-tip);
+    }
+
+    .markdown-alert.markdown-alert-caution {
+      border-left-color: var(--color-caution);
+    }
+
+    .markdown-alert.markdown-alert-caution .markdown-alert-title {
+      color: var(--color-caution);
+    }
+  </style>
+
+  <style>
+    .imgBox{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .imgBox img{
+      max-width: 49vw;
+    }
+  </style>
+
+
+</head>
+
+<body class="vscode-body vscode-light">
+  <h1 id="️-atmopulse--your-smart-weather-companion">🌤️ AtmoPulse — <em>Your Smart Weather Companion</em></h1>
+  <p class="imgBox"><img src="assets/desktop.png" alt="Weather Banner"></p>
+  <blockquote>
+    <p><strong>AtmoPulse</strong> is a fully responsive, smooth-animated weather forecasting web app built using
+      JavaScript and the <a href="https://www.weatherapi.com/">WeatherAPI</a>. Enter any location to get real-time
+      weather, temperature, AQI, UV index, and more — all wrapped in a sleek, modern interface!</p>
+  </blockquote>
+  <hr>
+  <h2 id="-features">🚀 Features</h2>
+  <p>✅ <strong>Live Weather Updates</strong><br>
+    ✅ <strong>Dual Search Input</strong> (Search &amp; Set Default Location)<br>
+    ✅ <strong>Air Quality Index (AQI)</strong> with intuitive health labels<br>
+    ✅ <strong>UV Index</strong> with dynamic risk levels<br>
+    ✅ <strong>Weather Icons &amp; Animations</strong><br>
+    ✅ <strong>Responsive UI</strong> for <strong>mobile, tablet, and desktop</strong><br>
+    ✅ <strong>Modern UI/UX</strong> with smooth transitions</p>
+  <hr>
+  <h2 id="-responsive-design">📱 Responsive Design</h2>
+  <blockquote>
+    <p>Looks great on <strong>all screen sizes</strong> — mobile 📱, tablet 💻, and desktop 🖥️!</p>
+  </blockquote>
+  <p  class="imgBox"><img src="assets\Mobile.png" alt="Responsive Demo"></p>
+  <hr>
+  <h2 id="-tech-stack">🧪 Tech Stack</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Frontend</th>
+        <th>API</th>
+        <th>Animations</th>
+        <th>Storage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>HTML5</td>
+        <td>WeatherAPI</td>
+        <td>CSS + JS</td>
+        <td>LocalStorage</td>
+      </tr>
+      <tr>
+        <td>CSS3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <h2 id="-live-preview">🌍 Live Preview</h2>
+  <p>🔗 <a href="https://atmopulse.netlify.app">Live Demo (AtmoPulse)</a></p>
+  <hr>
+  <h2 id="️-screenshots">🖼️ Screenshots</h2>
+  <p float="left" class="imgBox">
+    <img src="assets\desktop.png" width="45%" />
+    <img src="assets\uiPreview.png" width="45%" />
+  </p>
+  <hr>
+  <h2 id="-installation--usage">📦 Installation &amp; Usage</h2>
+  <pre><code class="language-bash"><span class="hljs-comment"># Clone the repository</span>
+git <span class="hljs-built_in">clone</span> https://github.com/DevloperAryan/Projects/atmopulse.git
+
+<span class="hljs-comment"># Navigate into the folder</span>
+<span class="hljs-built_in">cd</span> atmopulse
+
+<span class="hljs-comment"># Open index.html in your browser</span>
+</code></pre>
+  <blockquote>
+    <p>💡 Make sure to replace the API key in the JS file with your own WeatherAPI key.</p>
+  </blockquote>
+  <pre><code class="language-js"><span class="hljs-keyword">const</span> apiKey = <span class="hljs-string">&#x27;YOUR_API_KEY_HERE&#x27;</span>;
+</code></pre>
+  <hr>
+  <h2 id="-search-input-ux">🔍 Search Input UX</h2>
+  <p>💡 Use either of the two input fields:</p>
+  <ul>
+    <li>🔎 Top field: Instant search</li>
+    <li>🌐 Bottom field: Save your default location (stored in <code>localStorage</code>)</li>
+  </ul>
+  <hr>
+  <h2 id="-project-structure">📁 Project Structure</h2>
+  <pre><code>Atmopulse/
+│
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+│   ├── weather-icons/
+│   ├── loc-Icon.svg
+│   └── calender.svg
+</code></pre>
+  <hr>
+  <h2 id="-dynamic-outputs">📸 Dynamic Outputs</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Parameter</th>
+        <th>Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Temperature</td>
+        <td>`29°C</td>
+      </tr>
+      <tr>
+        <td>Weather</td>
+        <td><code>Partly Cloudy</code></td>
+      </tr>
+      <tr>
+        <td>AQI</td>
+        <td><code>Fair</code></td>
+      </tr>
+      <tr>
+        <td>UV Index</td>
+        <td><code>Moderate</code></td>
+      </tr>
+      <tr>
+        <td>Wind Speed</td>
+        <td><code>18 km/h</code></td>
+      </tr>
+      <tr>
+        <td>Humidity</td>
+        <td><code>62%</code></td>
+      </tr>
+      <tr>
+        <td>Visibility</td>
+        <td><code>10 km</code></td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <h2 id="-fun-fact">🧠 Fun Fact</h2>
+  <blockquote>
+    <p>Atmopulse automatically displays the <strong>default location</strong> and <strong>today’s date</strong> on load
+      using JavaScript + <code>localStorage</code>. No backend needed!</p>
+  </blockquote>
+  <hr>
+  <h2 id="-todo--future-scope">📌 Todo / Future Scope</h2>
+  <ul>
+    <li>🌧️ 5-Day Weather Forecast</li>
+    <li>📍 GPS-Based Auto Location</li>
+    <li>🌒 Dark/Light Theme Toggle</li>
+    <li>🔔 Weather Alerts</li>
+  </ul>
+  <hr>
+  <h2 id="-author">👨‍💻 Author</h2>
+  <p><strong>Aryan Kumar</strong><br>
+    📫 [Email] : <a href="mailto:aryankumar.linux@gmail.com">aryankumar.linux@gmail.com</a><br>
+    📎 <a href="https://aboutaryan.netlify.app">Portfolio</a></p>
+  <hr>
+  <h2 id="-show-your-support">⭐ Show your support</h2>
+  <p>If you like the project, consider ⭐ <strong>starring</strong> the repository! It helps a lot!</p>
+  <hr>
+  <h3 id="-made-with-️-by-aryan--feel-the-weather-with-atmopulse">🧊 Made with ❤️ by Aryan — <em>Feel the Weather with
+      Atmopulse!</em></h3>
+
+
+
+</body>
+
+</html>
